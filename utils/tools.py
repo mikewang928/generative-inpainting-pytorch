@@ -469,11 +469,16 @@ def deprocess(img):
     img = img.add_(1).div_(2)
     return img
 
-
+# from yaml import load, dump
+# try:
+#     from yaml import CLoader as Loader, CDumper as Dumper
+# except ImportError:
+#     from yaml import Loader, Dumper
 # get configs
 def get_config(config):
     with open(config, 'r') as stream:
         return yaml.load(stream)
+        # return yaml.load(stream, Loader=Loader)
 
 
 # Get model list for resume
