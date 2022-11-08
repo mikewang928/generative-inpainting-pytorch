@@ -64,6 +64,7 @@ def main():
                                 with_subfolder=config['data_with_subfolder'],
                                 image_shape=config['image_shape'],
                                 random_crop=config['random_crop'])
+        print(train_dataset)
         # val_dataset = Dataset(data_path=config['val_data_path'],
         #                       with_subfolder=config['data_with_subfolder'],
         #                       image_size=config['image_size'],
@@ -72,6 +73,7 @@ def main():
                                                    batch_size=config['batch_size'],
                                                    shuffle=True,
                                                    num_workers=config['num_workers'])
+        print(train_loader)
         # val_loader = torch.utils.data.DataLoader(dataset=val_dataset,
         #                                           batch_size=config['batch_size'],
         #                                           shuffle=False,

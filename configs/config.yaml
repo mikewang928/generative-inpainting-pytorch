@@ -1,7 +1,7 @@
 # data parameters
 dataset_name: imagenet
 data_with_subfolder: False
-train_data_path: /Users/mikewang/Library/CloudStorage/OneDrive-McGillUniversity/Study/Master/Semaster_1/EN.580.697/malaria_sampled/images
+train_data_path: E:\OneDrive - McGill University\Study\Master\Semaster_1\EN.580.697\malaria_sampled\images
 val_data_path:
 resume:
 batch_size: 48
