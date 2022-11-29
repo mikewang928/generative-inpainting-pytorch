@@ -109,8 +109,8 @@ def random_bbox(config, batch_size):
         bbox_list = bbox_list * batch_size
     else:
         for i in range(batch_size):
-            t = np.random.randint(margin_height, maxt)
-            l = np.random.randint(margin_width, maxl)
+            t = np.random.randint(margin_height, maxt) # this is the topleft coodrinate in y axis
+            l = np.random.randint(margin_width, maxl) # this is the topleft coodrinate in x axis
             bbox_list.append((t, l, h, w))
 
     return torch.tensor(bbox_list, dtype=torch.int64)
